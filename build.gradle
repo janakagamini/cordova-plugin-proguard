@@ -1,9 +1,13 @@
 android {
-  buildTypes {
-    release {
-      minifyEnabled true
-      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'assets/www/proguard-custom.txt'
-    }
-  }
-}
 
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'assets/www/proguard-custom.txt'
+        }
+    }
+}
